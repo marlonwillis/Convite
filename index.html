@@ -91,14 +91,7 @@ service-quality-->
                           </div>
                           <div id="formmessage" style="display:none; ">Success/Error Message Goes Here</div>
                           <form  id="contactform" autocomplete="off" class="gray-form row" method="post" name="google-sheet">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                  <input type="radio" id="noCheck" class="Empresaa" name="Tipo" value="Empresa" required>
-                                  <label for="Tipo">Empresa</label>
-                                  <input type="radio" id="yesCheck"  class="Entregador" name="Tipo" value="Entregador" required>
-                                  <label for="Tipo">Entregador</label><br>
-                                </div>
-                          </div>
+                    
                               <div class="col-md-6">
                                   <div class="form-group">
                                       <input type="text" class="form-control" name="Nome" id="form" placeholder="Nome Completo *" value="" required="required" />
@@ -128,39 +121,9 @@ service-quality-->
 footer -->
     <footer id="footer-fixed" class="footer-dark page-section-pt white-bg">
         <div class="container">
-          <div class="col-md-12">
-            <h3 class="text-center text-normal-font text-pink-red text-600-imp">FICOU ALGUMA DÚVIDA?</h3>
-          </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="footer-logo page-section-pb-1">
-                      <h5 class="text-black text-footer-style pb-2">Entre em contato com a gente</h5>
-                      <div class="img-social-bottom">
-                      <a href="https://api.whatsapp.com/send?phone=5545988222345&text=Tenho Dúvidas..." target="_blank"><img id="logo_footer_light" src="images/icon/social-icon-1.png" alt=""></a>
-                    </div>
-                    </div>
-                    <div class="header-social">
-                <ul>
-                  <a href="https://www.facebook.com/Measy-Fretes-105888441243059/" target="_blank">
-                    <li class="fb">
-                      <i class="fa fa-facebook"></i>
-                    </li>
-                  </a>
-                  <a href="https://www.instagram.com/measyfretes/" target="_blank">
-                    <li class="ig">
-                      <i class="fa fa-instagram"></i>
-                    </li>
-                  </a>
-                  <a href="https://www.youtube.com/channel/UC_ziN_U2aCIhfwbWNGZBR5A?view_as=subscriber" target="_blank">
-                    <li class="yt">
-                      <i class="fa fa-youtube"></i>
-                    </li>
-                  </a>
-                </ul>
-              </div>
-                </div>
-                    <script>
-                      const scriptURL = 'https://script.google.com/macros/s/AKfPresencaycbxJ5tvgITr5zgtNqXZrwbIEG_6ZrJidiRSMXvpu4GnyicvyN8A/exec'
+
+                                   <script>
+                      const scriptURL = 'https://script.google.com/macros/s/AKfycbwEIR8vfenuDQOdc6SrMgDJoO8WW5-uVWub4zmlontBL0OZ6azNFFVHqIHEDgROeY_8/exec'
                           const form = document.forms['google-sheet']
 
                 form.addEventListener('submit', e => {
@@ -196,9 +159,7 @@ footer -->
                         }
                           </script>
                     <div id="ajaxloader" style="display:none; "><img class="center-block" src="images/form-loader.gif" alt=""></div>
-                </div>
-            </div>
-        </div>
+                    </div>
     </footer>
     <!--=================================
 footer -->
