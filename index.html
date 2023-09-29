@@ -8,7 +8,7 @@
     <meta name="description" content="Measy fretes" />
     <meta name="author" content="soldafria.net" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Convite Marlon & Vasti</title>
+    <title>Measy fretes</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" />
 
@@ -43,7 +43,46 @@
 
 <body>
     <div id="main">
-           <div class="search-overlay"></div>
+        <!--=================================
+            header -->
+        <header id="header" class="transparent">
+            <!--=================================
+                mega menu -->
+            <div class="menu">
+                <!-- menu start -->
+                <nav id="menu" class="mega-menu">
+                    <!-- menu list items container -->
+                    <section class="menu-list-items">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <!-- menu logo -->
+                                    <ul class="menu-logo">
+                                        <li>
+                                            <a href="https://measyfretes.com.br"><img id="logo_light_img" src="images/logo-color.png" alt="logo"> </a>
+                                        </li>
+                                    </ul>
+                                    <!-- menu links -->
+                                    <ul class="menu-links">
+                                        <!-- active class -->
+                                        <li class="active"><a href="#header">início
+                                        <!-- active class -->
+                                        <li><a href="#sobre">sobre
+                                        <li><a href="#empresas">empresas
+                                        <li><a href="#entregador">entregador
+                                        <li><a class="contact-down">ajuda</a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </nav>
+                <!-- menu end -->
+            </div>
+        </header>
+        <!--=================================
+search and side menu content-disable -->
+        <div class="search-overlay"></div>
         <div class="menu-overlay"></div>
         <!--=================================
 service-quality-->
@@ -54,7 +93,7 @@ service-quality-->
                       <div class="col-lg-6 col-md-7">
                           <div class="addresss mb-3 mt-5">
                               <div class="addresss-info">
-                                  <h3 class="text-black">Vasti & </br>Marlon</h3>
+                                  <h3 class="text-black">O QUE VOCÊ QUER ENTREGAR? </br> CADASTRE-SE</h3>
                               </div>
                           </div>
                           <div class="addresss mb-1">
@@ -90,8 +129,15 @@ service-quality-->
                           <div class="contact-form-title mb-4">
                           </div>
                           <div id="formmessage" style="display:none; ">Success/Error Message Goes Here</div>
-                          <form  id="contactform" autocomplete="off" class="gray-form row" method="post" name="google-sheet">
-                    
+                          <form id="contactform" autocomplete="off" class="gray-form row" method="post" name="google-sheet">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                  <input type="radio" id="noCheck" class="Empresa" name="Tipo" value="Empresa" required>
+                                  <label for="Tipo">Empresa</label>
+                                  <input type="radio" id="yesCheck"  class="Entregador" name="Tipo" value="Entregador" required>
+                                  <label for="Tipo">Entregador</label><br>
+                                </div>
+                          </div>
                               <div class="col-md-6">
                                   <div class="form-group">
                                       <input type="text" class="form-control" name="Nome" id="form" placeholder="Nome Completo *" value="" required="required" />
@@ -99,9 +145,29 @@ service-quality-->
                               </div>
                               <div class="col-md-6">
                                   <div class="form-group">
-                                      <input type="text" class="form-control" name="Presenca" id="Presenca" placeholder="Presença*"  value="" required />
+                                      <input type="tel" class="form-control" name="Telefone" id="Telefone" placeholder="Telefone Com DDD *"  value="" required />
                                   </div>
-                              </div>                                                                            
+                              </div>
+                              <div class="col-md-12">
+                                  <div class="form-group">
+                                      <input type="email" class="form-control" name="Email" id="form" placeholder="Email *"  value="" required />
+                                  </div>
+                              </div>
+                              <div class="col-md-12">
+                                  <div class="form-group">
+                                      <input type="text" class= "form-control" name="Cidade" id="form" placeholder="Cidade *"  value="" required />
+                                  </div>
+                              </div>
+                              <div class="col-md-12">
+                                  <div class="form-group">
+                                    <textarea type="text" rows="4" cols="50" class="form-control" id="form" name="Observacao" placeholder="Coloque aqui sua observação..."></textarea>
+                                  </div>
+                              </div>
+                              <div class="col-md-12 template">
+                                  <div class="form-group">
+                                      <input type="text" class= "form-control" name="Veiculo" id="veiculo" placeholder="Veículo *"  value="" />
+                                  </div>
+                              </div>
                               <div class="col-md-12">
                                   <button id="submit" name="submit" type="submit" value="Send" class="button"><span>Enviar</span></button>
                               </div>
@@ -115,14 +181,239 @@ service-quality-->
             </BR>
             </BR>
           </section>
-            
+            <section id="sobre" class="progress-bar-main pink-red-bg page-section-ptb-2">
+              <div class="container">
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                      <h3 class="text-white text-center mb-3">Assista</h3>
+                    </br>
+                      <div class="videoWrapper">
+                        <iframe width="400" height="200" src="https://www.youtube.com/embed/it6htLwYHZM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+            <p class="text-white text-center text-p-iso-1">O Measy fretes é uma plataforma que conecta empresas que precisam fazer entregas de produtos, alimentos, bebidas, documentos de escritório, de forma rápida e segura.</p>
+          </div>
+          </div>
+          </BR>
+          </BR>
+          <div class="container center-iso">
+              <div class="row">
+                  <div class="col-md-2">
+                      <div class="feature-box-01 text-center mb-5">
+                          <div class="feature-box-img mb-2">
+                              <img class="img-media img-fluid center-block" src="images/icon/icon-1.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-2">
+                      <div class="feature-box-01 text-center mb-5 rotate-iso">
+                          <div class="feature-box-img mb-2">
+                              <img class="img-media-arrow img-fluid center-block position-img-icon" src="images/icon/icon-arrow-1.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-2">
+                      <div class="feature-box-01 text-center mb-5">
+                          <div class="feature-box-img mb-2">
+                              <img class="img-media img-fluid center-block" src="images/icon/icon-2.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-2">
+                      <div class="feature-box-01 text-center rotate-iso">
+                          <div class="feature-box-img mb-2">
+                              <img class="img-media-arrow img-fluid center-block position-img-icon" src="images/icon/icon-arrow-2.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-2">
+                      <div class="feature-box-01 text-center">
+                          <div class="feature-box-img mb-2">
+                              <img class="img-media img-fluid center-block" src="images/icon/icon-3.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+        <!--=================================
+progress-bar-->
+        <section  id="empresas"class="progress-bar-main white-bg page-section-ptb-2">
+            <div class="container">
+              <div class="col-md-12">
+                <h3 class="text-center text-normal-font"><b class="text-pink-red">Vantagens</b> de ser <b class="text-pink-red">Parceiro</b> Measy Fretes</h3>
+              </div>
+            </br>
+            </br>
+              <div class="row">
+                  <div class="col-md-4">
+                      <div class="feature-box-01 text-center mb-5">
+                          <div class="feature-box-img mb-2">
+                              <img class="img-fluid center-block img-fluid-width" src="images/icon/icon-4.png" alt="">
+                          </div>
+                          <div class="feature-box-info mt-2">
+                              <h5 class="mb-2 text-pink-red text-600-imp">TAXAS JUSTAS</h5>
+                              <p class="p-style-iso">Nossas taxas possuem preços fixos, então sem surpresas na hora de solicitar</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="feature-box-01 text-center mb-5">
+                          <div class="feature-box-img mb-2">
+                              <img class="img-fluid center-block img-fluid-width" src="images/icon/icon-5.png" alt="">
+                          </div>
+                          <div class="feature-box-info mt-2">
+                              <h5 class="mb-2 text-pink-red text-600-imp">ENTREGAS EFICIENTES</h5>
+                              <p class="p-style-iso">Seus pedidos entregues de forma rápida e segura</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="feature-box-01 text-center mb-5">
+                          <div class="feature-box-img mb-2">
+                              <img class="img-fluid center-block img-fluid-width" src="images/icon/icon-6.png" alt="">
+                          </div>
+                          <div class="feature-box-info mt-2">
+                              <h5 class="mb-2 text-pink-red text-600-imp">OPÇÕES DE ENTREGADORES</h5>
+                              <p class="p-style-iso">Nossa plataforma conta com mais de 800 entregadores cadastrados</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </br>
+              <div class="col-md-12 text-center">
+              <a href="#header" class="button buttom-sub"><span>CADASTRE-SE</span></a>
+            </div>
+            </div>
+        </section>
+        <!--=================================
+vantagens-delivery-section -->
+        <section id="entregador"class="progress-bar-main pink-red-bg page-section-ptb-2">
+          <div class="container">
+            <div class="col-md-12">
+              <h3 class="text-center text-normal-font text-white"><b class="text-white">Vantagens</b> de ser um <b class="text-white">ENTREGADOR</b></h3>
+            </div>
+          </br>
+          </br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box-01 text-center mb-5">
+                        <div class="feature-box-img mb-2">
+                            <img class="img-fluid center-block img-fluid-width" src="images/icon/icon-7.png" alt="">
+                        </div>
+                        <div class="feature-box-info mt-2">
+                            <h5 class="mb-2 text-white text-600-imp h5-slyle-iso">HORÁRIO FLEXÍVEL</h5>
+                            <p class="p-style-iso-1 text-white">Você faz o seu horário e trabalha quando quiser</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box-01 text-center mb-5">
+                        <div class="feature-box-img mb-2">
+                            <img class="img-fluid center-block img-fluid-width" src="images/icon/icon-8.png" alt="">
+                        </div>
+                        <div class="feature-box-info mt-2">
+                            <h5 class="mb-2 text-white text-600-imp h5-slyle-iso">GANHOS SEMANAIS</h5>
+                            <p class="p-style-iso-1 text-white">Toda terça-feira os seus  ganhos são depositados na SUA conta bancária</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box-01 text-center mb-5">
+                        <div class="feature-box-img mb-2">
+                            <img class="img-fluid center-block img-fluid-width" src="images/icon/icon-9.png" alt="">
+                        </div>
+                        <div class="feature-box-info mt-2">
+                            <h5 class="mb-2 text-white text-600-imp h5-slyle-iso">VOCÊ DIZ QUANTO</h5>
+                            <p class="p-style-iso-1 text-white">No nosso app você define o valor da corrida e não cobramos nenhuma taxa por isso</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </br>
+            <div class="col-md-12 text-center">
+            <a href="#header" class="button-white buttom-sub"><span>CADASTRE-SE</span></a>
+          </div>
+          </div>
+        </section>
 
-          <!--=================================
+    <!--=================================
 footer -->
     <footer id="footer-fixed" class="footer-dark page-section-pt white-bg">
         <div class="container">
-
-                                   <script>
+          <div class="col-md-12">
+            <h3 class="text-center text-normal-font text-pink-red text-600-imp">FICOU ALGUMA DÚVIDA?</h3>
+          </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-logo page-section-pb-1">
+                      <h5 class="text-black text-footer-style pb-2">Entre em contato com a gente</h5>
+                      <div class="img-social-bottom">
+                      <a href="https://api.whatsapp.com/send?phone=5545988222345&text=Tenho Dúvidas..." target="_blank"><img id="logo_footer_light" src="images/icon/social-icon-1.png" alt=""></a>
+                    </div>
+                    </div>
+                    <div class="header-social">
+                <ul>
+                  <a href="https://www.facebook.com/Measy-Fretes-105888441243059/" target="_blank">
+                    <li class="fb">
+                      <i class="fa fa-facebook"></i>
+                    </li>
+                  </a>
+                  <a href="https://www.instagram.com/measyfretes/" target="_blank">
+                    <li class="ig">
+                      <i class="fa fa-instagram"></i>
+                    </li>
+                  </a>
+                  <a href="https://www.youtube.com/channel/UC_ziN_U2aCIhfwbWNGZBR5A?view_as=subscriber" target="_blank">
+                    <li class="yt">
+                      <i class="fa fa-youtube"></i>
+                    </li>
+                  </a>
+                </ul>
+              </div>
+                </div>
+                <div class="col-lg-7 contact-footer-dark">
+                    <div class="contact-form-title mb-4">
+                        <h3 class="mb-1 text-white" id="contato">Contato</h3>
+                    </div>
+                    <div id="formmessage" style="display:none">Success/Error Message Goes Here</div>
+                    <form method="post" action="php/contact-form.php" id="formulario_contato" onsubmit="validaForm(); return false;" class="gray-form row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" nome="Nome" id="Nome" placeholder="Nome Completo *" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="tel" class="form-control" nome="Telefone" id="Telefonebottom" placeholder="Telefone Com DDD *" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="email" class="form-control" nome="Email" id="Email" placeholder="Email *" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                              <input type="text" class="form-control" nome="Cidade" id="cidade" placeholder="Cidade *" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                              <input type="text" class="form-control" nome="Veiculo" id="Veiculo" placeholder="Véiculo">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                          <p class="submit">
+                           <input type="submit" class="button" value="Enviar" />
+                             </p>
+                        </div>
+                    </form>
+                    <script>
                       const scriptURL = 'https://script.google.com/macros/s/AKfycbwEIR8vfenuDQOdc6SrMgDJoO8WW5-uVWub4zmlontBL0OZ6azNFFVHqIHEDgROeY_8/exec'
                           const form = document.forms['google-sheet']
 
@@ -159,7 +450,26 @@ footer -->
                         }
                           </script>
                     <div id="ajaxloader" style="display:none; "><img class="center-block" src="images/form-loader.gif" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <ul class="list-inline text-left">
+                           <li class="text-white">Desenvolvido por:</li>
+                           <li><a href="https://www.soldafria.net">Solda Fria Produções</a></li>
+                        </ul>
                     </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="text-right">
+                            <p  id="ajuda" class="text-white">Direitos autorais © 2020 Measyfretes. Todos os direitos reservados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <!--=================================
 footer -->
