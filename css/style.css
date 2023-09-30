@@ -77,30 +77,47 @@ Design and Developed by: soldafria.net
 /***************************
 		 General
 ***************************/
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700');
-body { font-family: 'Roboto', sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 24px; color: #000000; }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Nunito&display=swap');
+@font-face {
+	font-family: 'Monsieur';
+	src: url(font/MonsieurLaDoulaise-Regular.ttf);
+  }
+  @font-face {
+	font-family: 'Dance';
+	src: url(font/Dancing\ Script.ttf);
+  }
+  @font-face {
+	font-family: 'Ana';
+	src: url(font/AnandaBlackPersonalUseRegular-rg9Rx.ttf);
+  }
+body { font-family: 'Nunito', sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 24px; color: #000000; }
 a, .btn { -webkit-transition: all 0.5s ease-out 0s; -moz-transition: all 0.5s ease-out 0s; -ms-transition: all 0.5s ease-out 0s; -o-transition: all 0.5s ease-out 0s; transition: all 0.5s ease-out 0s; color: #353535; }
 a:focus { text-decoration: none !important; }
 a:focus, a:hover { color: #FFB540; text-decoration: none !important; }
 a, button, input { outline: medium none !important; color: #FFB540; }
-h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif; font-weight: normal; color: #353535; margin-top: 0px; margin-bottom: 0px; text-transform:uppercase;}
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; }
 h1 { font-size: 54px; font-style: normal; font-weight: 700; line-height: 54px; }
-h2 { font-size: 40px; font-style: normal; font-weight: 700; line-height: 40px; }
-h3 { font-size: 30px; font-style: normal; font-weight: 700; line-height: 34px; }
+h2 { font-size: 40px; font-style: normal; font-weight: 700; line-height: 40px; font-family: 'Dance', sans-serif; font-weight: 700; color: #080808; margin-top: 0px; margin-bottom: 26px; }
+h3 { font-size: 120px; font-style: normal; font-weight: 100; font-family: 'Monsieur', sans-serif; font-weight: normal; color: #080808; margin-top: 0px; margin-bottom: 0px;}
 h4 { font-size: 24px; font-style: normal; font-weight: 600; line-height: 28px; }
 h5 { font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; }
-h6 { font-size: 16px; font-style: normal; font-weight: 400; line-height: 24px; }
+h6 { font-size: 30px; font-style: normal; font-weight: 400; line-height: 24px; font-family: 'Dance', sans-serif; font-weight: normal; color: #080808; margin-top: 0px; margin-bottom: 20px; }
 ul { margin: 0px; padding: 0px; }
 hr { margin: 0; padding: 0px; border-bottom: 1px solid #e0e0e0; border-top: 0px; }
 label { font-size: 15px; font-weight: 400; color: #aaaaaa; }
 .label { color: #fff !important; font-size: 9px !important; }
+p { font-family: 'Nunito', sans-serif;}
 
 *::-moz-selection { background: #FFB540; color: #fff; text-shadow: none; }
 ::-moz-selection { background: #FFB540; color: #fff; text-shadow: none; }
 ::selection { background: #f52c56; color: #fff; text-shadow: none; }
 html{ scroll-behavior: smooth!important; }
-
+.typo-01 {
+	text-align: center;
+}
+.center-typo{
+	text-align: center;
+}
 /***************************
 	    typography
 ****************************/
@@ -124,7 +141,7 @@ blockquote.default { padding-left: 100px; }
 blockquote.default cite { font-size: 16px; }
 
 .list-style-none li { list-style: none; }
-input[type=checkbox], input[type=radio] { margin: 4px 4px 0; line-height: 0px; }
+input[type=checkbox], input[type=radio] { margin: 4px 5px 0; line-height: 0px; }
 select { width: 100%; background: #FFB540; border: 0px; padding: 15px 18px 15px 30px; border-radius: 30px; }
 .select-hidden { display: none; visibility: hidden; padding-right: 10px; }
 .select { cursor: pointer; display: inline-block; position: relative; font-size: 14px; color: #e3e3e3; width: 100%; height: 50px; }
@@ -155,7 +172,9 @@ textarea { height: auto!important; }
 /************************************
     Style-isolated
 *************************************/
-
+.display-none {
+	display: none;
+}
 .text-p-iso-1 {font-size: 30px; line-height: 1.2; margin-top: 50px; font-weight: 100; }
 .position-img-icon{ max-width: 80%; padding-top: 5px; }
 .text-normal-font { font-size: 30px; font-weight: normal;}
@@ -277,8 +296,8 @@ textarea { height: auto!important; }
 	      button
 ***************************/
 .buttom-sub{font-size: 45px; font-weight: 100!important; padding: 25px 60px!important;}
-.button { background: #f52c56; padding: 10px 30px; color: #ffffff; border: 2px solid #f52c56; text-transform: uppercase; font-weight: 400; display: inline-block; border-radius: 30px; text-align: center; cursor: pointer; transition: 0.5s;}
-.button:hover { background: #353535; color: #ffffff; border-color: #353535; }
+.button { background: #a9fc9e; padding: 10px 30px; color: #116f27; border: 2px solid #a9fc9e; text-transform: uppercase; font-weight: 400; display: inline-block; border-radius: 30px; text-align: center; cursor: pointer; transition: 0.5s;}
+.button:hover { background: #fc4343; color: #ffffff; border-color: #fc4343; }
 .button.black { background: #353535; color: #ffffff; border: 2px solid #353535; }
 .button.black:hover, .button.black.active { background: #FFB540; color: #ffffff; border-color: #FFB540; }
 .button.white { background: #fff; color: #2046f2; border: 2px solid #FFB540; }
@@ -1147,7 +1166,7 @@ textarea.form-control { resize: vertical; }
 /***************************
 	     Register
 ***************************/
-.gray-form label { color: #353535; display: inline-block; margin-top: 8px; margin-bottom: 4px; text-transform: uppercase; font-size: 13px; }
+.gray-form label { color: #353535; display: inline-block; margin-top: 8px; margin-bottom: 4px; text-transform: uppercase; font-size: 16px; }
 .gray-form > label { display: block; }
 .gray-form .field-widget { position: relative; }
 .gray-form .field-widget .form-control { padding-left: 130px; }
