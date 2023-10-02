@@ -103,7 +103,7 @@ h3 { font-size: 80px; font-style: normal; font-weight: 100; font-family: 'Monsie
 h4 { font-size: 24px; font-style: normal; font-weight: 600; line-height: 28px; }
 h5 { font-size: 18px; font-style: normal; font-weight: 700; line-height: 30px; }
 h6 { font-size: 30px; font-style: normal; font-weight: 400; line-height: 24px; font-family: 'Dance', sans-serif; font-weight: normal; color: #080808; margin-top: 0px; margin-bottom: 20px; }
-h7 { font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; font-family: 'Ana', sans-serif; font-weight: normal; color: #080808; margin-top: 0px; margin-bottom: 20px; }
+h7 { font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; font-family: 'Nunito', sans-serif; font-weight: normal; color: #080808; margin-top: 0px; margin-bottom: 20px; }
 ul { margin: 0px; padding: 0px; }
 hr { margin: 0; padding: 0px; border-bottom: 1px solid #e0e0e0; border-top: 0px; }
 label { font-size: 15px; font-weight: 400; color: #aaaaaa; }
@@ -231,7 +231,7 @@ textarea { height: auto!important; }
 .mt-9 { margin-top: 90px; }
 .mt-10 { margin-top: 100px; }
 .mb-0 { margin-bottom: 0px; }
-.mb-1 { margin-bottom: 10px; }
+.mb-1 { margin-bottom: 10px!important; }
 .mb-2 { margin-bottom: 20px; }
 .mb-3 { margin-bottom: 30px; }
 .mb-4 { margin-bottom: 40px; }
