@@ -49,11 +49,11 @@ search and side menu content-disable -->
         <div class="menu-overlay"></div>
         <!--=================================
 service-quality-->
-        <section class="service-quality white-bg">
+        <section class="service-quality green-bg">
             <div class="container">
               <div class="container">
                   <div class="row">
-                      <div class="col-lg-6 col-md-7">
+                      <div class="col-lg-12">
                           <div class="addresss mb-3 mt-5">
                               <div class="addresss-info">
                                   <h3 class="center-typo">Vasti &</br> Marlon</h3>
@@ -105,52 +105,43 @@ service-quality-->
             </BR>
             </BR>
           </section>
-    <footer id="footer-fixed" class="footer-dark page-section-pt white-bg">
-        <div class="container">
-          <div class="col-md-12">
-          </div>
-            <div class="row">
-                    <script>
-                      const scriptURL = 'https://script.google.com/macros/s/AKfycbzjqO3ScPUU3acg4MRdUavgo8nm42x99VpCuVcO-W11vYogzltcHPYlE1YTtrflF51Z/exec'
-                          const form = document.forms['google-sheet']
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzjqO3ScPUU3acg4MRdUavgo8nm42x99VpCuVcO-W11vYogzltcHPYlE1YTtrflF51Z/exec'
+                const form = document.forms['google-sheet']
 
-                form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert('Obridado por se Cadastrar!'))
-                .catch(error => console.error('Error!', error.message))
-                    if(alert('Obridado por se Cadastrar!')){}
-                      else    window.location.reload();
-                      })
-                      </script>
-                        <script type="text/javascript">
-                        function validaForm()
-                        {
-                            erro = false;
-                            if($('#Nome').val() == '')
-                            {
-                                alert('Você precisa preencher o campo Nome');erro = true;
-                            }
-                            if($('#Email').val() == '' && !erro)
-                            {
-                                alert('Você precisa preencher o campo E-mail');erro = true;
-                            }
-                            if($('#cidade').val() == '' && !erro)
-                            {
-                                alert('Você precisa preencher o campo cidade');erro = true;
-                            }
-                            //se nao tiver erros
-                            if(!erro)
-                            {
-                                $('#formulario_contato').submit();
-                            }
-                        }
-                          </script>
-                    <div id="ajaxloader" style="display:none; "><img class="center-block" src="images/form-loader.gif" alt=""></div>
-                </div>
-            </div>
-        </div>
-    </footer>
+      form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => alert('Obridado por se Cadastrar!'))
+      .catch(error => console.error('Error!', error.message))
+          if(alert('Obridado por se Cadastrar!')){}
+            else    window.location.reload();
+            })
+            </script>
+              <script type="text/javascript">
+              function validaForm()
+              {
+                  erro = false;
+                  if($('#Nome').val() == '')
+                  {
+                      alert('Você precisa preencher o campo Nome');erro = true;
+                  }
+                  if($('#Email').val() == '' && !erro)
+                  {
+                      alert('Você precisa preencher o campo E-mail');erro = true;
+                  }
+                  if($('#cidade').val() == '' && !erro)
+                  {
+                      alert('Você precisa preencher o campo cidade');erro = true;
+                  }
+                  //se nao tiver erros
+                  if(!erro)
+                  {
+                      $('#formulario_contato').submit();
+                  }
+              }
+                </script>
+          <div id="ajaxloader" style="display:none; "><img class="center-block" src="images/form-loader.gif" alt=""></div>
     <!--=================================
 footer -->
 

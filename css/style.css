@@ -90,7 +90,7 @@ Design and Developed by: soldafria.net
 	font-family: 'Ana';
 	src: url(font/AnandaBlackPersonalUseRegular-rg9Rx.ttf);
   }
-body { font-family: 'Nunito', sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 24px; color: #000000; }
+body { font-family: 'Nunito', sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 24px; color: #000000; background-color: #a9fc9e!important;}
 a, .btn { -webkit-transition: all 0.5s ease-out 0s; -moz-transition: all 0.5s ease-out 0s; -ms-transition: all 0.5s ease-out 0s; -o-transition: all 0.5s ease-out 0s; transition: all 0.5s ease-out 0s; color: #353535; }
 a:focus { text-decoration: none !important; }
 a:focus, a:hover { color: #FFB540; text-decoration: none !important; }
@@ -98,7 +98,7 @@ a, button, input { outline: medium none !important; color: #FFB540; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; }
 h1 { font-size: 54px; font-style: normal; font-weight: 700; line-height: 54px; }
 h2 { font-size: 40px; font-style: normal; font-weight: 700; line-height: 40px; font-family: 'Dance', sans-serif; font-weight: 700; color: #080808; margin-top: 0px; margin-bottom: 26px; }
-h3 { font-size: 120px; font-style: normal; font-weight: 100; font-family: 'Monsieur', sans-serif; font-weight: normal; color: #080808; margin-top: 0px; margin-bottom: 0px;}
+h3 { font-size: 120px; font-style: normal; font-weight: 100; font-family: 'Monsieur', sans-serif; font-weight: normal; background-image: linear-gradient(to right,#462523 0,#cb9b51 22%, 	#f6e27a 45%,	#d8d38d 50%,	#f6e27a 55%,	#cb9b51 78%,	#462523 100%	);  color:transparent; -webkit-background-clip:text; margin-top: 0px; margin-bottom: 0px;text-shadow: 3px 3px 2px rgb(119 106 44 / 28%);}
 h4 { font-size: 24px; font-style: normal; font-weight: 600; line-height: 28px; }
 h5 { font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; }
 h6 { font-size: 30px; font-style: normal; font-weight: 400; line-height: 24px; font-family: 'Dance', sans-serif; font-weight: normal; color: #080808; margin-top: 0px; margin-bottom: 20px; }
@@ -250,7 +250,7 @@ textarea { height: auto!important; }
 .text-white { color: #ffffff; }
 .text-black { color: #353535; }
 .text-gray { color: #aaaaaa; }
-.white-bg { background: #ffffff; }
+.green-bg { background: #a9fc9e; }
 .gray-bg { background: #f6f7f8; }
 .pink-red-bg { background: #f52c56; }
 .blue-bg { background: #FFB540; }
