@@ -98,7 +98,7 @@ a, button, input { outline: medium none !important; color: #FFB540; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; }
 h1 { font-size: 54px; font-style: normal; font-weight: 700; line-height: 54px; }
 h2 { font-size: 40px; font-style: normal; font-weight: 700; line-height: 40px; font-family: 'Dance', sans-serif; font-weight: 700; color: #080808; margin-top: 0px; margin-bottom: 26px; }
-h3 { font-size: 120px; font-style: normal; font-weight: 100; font-family: 'Monsieur', sans-serif; font-weight: normal; background-image: linear-gradient(to right,#462523 0,#cb9b51 22%, 	#f6e27a 45%,	#d8d38d 50%,	#f6e27a 55%,	#cb9b51 78%,	#462523 100%	);  color:transparent; -webkit-background-clip:text; margin-top: 0px; margin-bottom: 0px;text-shadow: 3px 3px 5px rgb(119 106 44 / 28%);}
+h3 { font-size: 80px; font-style: normal; font-weight: 100; font-family: 'Monsieur', sans-serif; font-weight: normal; background-image: linear-gradient(to right,#462523 0,#cb9b51 22%, 	#f6e27a 45%,	#d8d38d 50%,	#f6e27a 55%,	#cb9b51 78%,	#462523 100%	);  color:transparent; -webkit-background-clip:text; margin-top: 0px; margin-bottom: 0px;text-shadow: 3px 3px 5px rgb(119 106 44 / 28%);}
 h4 { font-size: 24px; font-style: normal; font-weight: 600; line-height: 28px; }
 h5 { font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; }
 h6 { font-size: 30px; font-style: normal; font-weight: 400; line-height: 24px; font-family: 'Dance', sans-serif; font-weight: normal; color: #080808; margin-top: 0px; margin-bottom: 20px; }
