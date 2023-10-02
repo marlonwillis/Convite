@@ -90,7 +90,7 @@ Design and Developed by: soldafria.net
 	font-family: 'Ana';
 	src: url(font/AnandaBlackPersonalUseRegular-rg9Rx.ttf);
   }
-body { font-family: 'Nunito', sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 24px; color: #000000;min-width: 600px; background-image: url(img/frame-15.png),url(img/frame-wit-oval.png),url(img/64f331089919av1.png),url(img/dirty-rustic.jpg);background-position: center,center,top,center;background-repeat: no-repeat, no-repeat;background-size: 70vh 85vh,100vh 100vh,100vh,100%;}
+body { font-family: 'Nunito', sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 24px; color: #000000;background-image: url(img/frame-15.png),url(img/frame-wit-oval.png),url(img/64f331089919av1.png),url(img/dirty-rustic.jpg);background-position: center,center,top,center;background-repeat: no-repeat, no-repeat;background-size: 70vh 85vh,100vh 100vh,100vh,100%;}
 a, .btn { -webkit-transition: all 0.5s ease-out 0s; -moz-transition: all 0.5s ease-out 0s; -ms-transition: all 0.5s ease-out 0s; -o-transition: all 0.5s ease-out 0s; transition: all 0.5s ease-out 0s; color: #353535; }
 a:focus { text-decoration: none !important; }
 a:focus, a:hover { color: #FFB540; text-decoration: none !important; }
