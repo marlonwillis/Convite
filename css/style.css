@@ -90,18 +90,19 @@ Design and Developed by: soldafria.net
 	font-family: 'Ana';
 	src: url(font/AnandaBlackPersonalUseRegular-rg9Rx.ttf);
   }
-body { font-family: 'Nunito', sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 24px; color: #000000;min-width: 400px; background-image: url(img/Floral-design.png), url(img/clipart1818948.png),url();	background-position: right bottom, left top;background-repeat: no-repeat, no-repeat;background-size: 215px 220px,180px 330px;}
+body { font-family: 'Nunito', sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 24px; color: #000000;min-width: 400px; background-image: url(img/frame-15.png),url(img/frame-wit-oval.png),url(img/64f331089919av1.png),url(img/dirty-rustic.jpg);background-position: center,center,top,center;background-repeat: no-repeat, no-repeat;background-size: 70vh 85vh,100vh 100vh,100vh,100%;}
 a, .btn { -webkit-transition: all 0.5s ease-out 0s; -moz-transition: all 0.5s ease-out 0s; -ms-transition: all 0.5s ease-out 0s; -o-transition: all 0.5s ease-out 0s; transition: all 0.5s ease-out 0s; color: #353535; }
 a:focus { text-decoration: none !important; }
 a:focus, a:hover { color: #FFB540; text-decoration: none !important; }
 a, button, input { outline: medium none !important; color: #FFB540; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; }
 h1 { font-size: 54px; font-style: normal; font-weight: 700; line-height: 54px; }
-h2 { font-size: 40px; font-style: normal; font-weight: 700; line-height: 40px; font-family: 'Dance', sans-serif; font-weight: 700; color: #080808; margin-top: 0px; margin-bottom: 26px; }
-h3 { font-size: 80px; font-style: normal; font-weight: 100; font-family: 'Monsieur', sans-serif; font-weight: normal; background-image: linear-gradient(to right,#462523 0,#cb9b51 22%, 	#f6e27a 45%,	#d8d38d 50%,	#f6e27a 55%,	#cb9b51 78%,	#462523 100%	);  color:transparent; -webkit-background-clip:text; margin-top: 0px; margin-bottom: 0px;text-shadow: 3px 3px 5px rgb(119 106 44 / 28%);}
+h2 { font-size: 40px; font-style: normal; font-weight: 700; line-height: 40px; font-family: 'Dance', sans-serif; font-weight: 700; color: #080808; margin-top: 0px; margin-bottom: 8px;transform: scale(0.94);animation: scale 5s forwards cubic-bezier(0.5, 1, 0.89, 1); }
+h3 { font-size: 80px; font-style: normal; font-weight: 100; font-family: 'Monsieur', sans-serif; font-weight: normal; background-image: linear-gradient(to right,#462523 0,#cb9b51 22%, 	#f6e27a 45%,	#d8d38d 50%,	#f6e27a 55%,	#cb9b51 78%,	#462523 100%	);  color:transparent; -webkit-background-clip:text; margin-top: 0px; margin-bottom: 0px;text-shadow: 3px 3px 5px rgb(119 106 44 / 28%);transform: scale(0.94);animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);}
 h4 { font-size: 24px; font-style: normal; font-weight: 600; line-height: 28px; }
 h5 { font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; }
 h6 { font-size: 30px; font-style: normal; font-weight: 400; line-height: 24px; font-family: 'Dance', sans-serif; font-weight: normal; color: #080808; margin-top: 0px; margin-bottom: 20px; }
+h7 { font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; font-family: 'Ana', sans-serif; font-weight: normal; color: #080808; margin-top: 0px; margin-bottom: 20px; }
 ul { margin: 0px; padding: 0px; }
 hr { margin: 0; padding: 0px; border-bottom: 1px solid #e0e0e0; border-top: 0px; }
 label { font-size: 15px; font-weight: 400; color: #aaaaaa; }
@@ -152,6 +153,24 @@ select { width: 100%; background: #FFB540; border: 0px; padding: 15px 18px 15px 
 .select-options li { list-style: none; font-size: 14px; padding-left: 15px; color: #323232; }
 .selected-box.auto-hight .select-options { height: 300px; overflow: auto; }
 
+@-webkit-keyframes MOVE {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+ }
+ @-moz-keyframes MOVE {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+ }
+ @-ms-keyframes MOVE {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+ }
+ .fade-typos {
+	-webkit-animation: MOVE 5s ;
+	-moz-animation:    MOVE 5s ;
+	-ms-animation:     MOVE 5s ;
+ }
+ 
 /************************************
     from-isolated
 *************************************/
@@ -228,7 +247,7 @@ textarea { height: auto!important; }
 .pt-6 { padding-top: 60px; }
 .pt-7 { padding-top: 70px; }
 .pt-8 { padding-top: 80px; }
-.pt-9 { padding-top: 90px; }
+.pt-9 { padding-top: 145px; }
 .pt-10 { padding-top: 100px; }
 .pb-0 { padding-bottom: 0px; }
 .pb-1 { padding-bottom: 10px; }
@@ -1166,7 +1185,7 @@ textarea.form-control { resize: vertical; }
 /***************************
 	     Register
 ***************************/
-.gray-form label { color: #353535; display: inline-block; margin-top: 8px;margin-bottom: 4px; text-transform: uppercase; font-size: 20px; padding: 10px; border-radius: 10px; background-color: #fff; }
+.gray-form label { color: #353535; display: inline-block; margin-top: 8px;margin-bottom: 4px; text-transform: uppercase; font-size: 20px; padding: 10px; border-radius: 10px; background-color: #6dff71ba; }
 .gray-form > label { display: block; }
 .gray-form .field-widget { position: relative; }
 .gray-form .field-widget .form-control { padding-left: 130px; }
@@ -2400,4 +2419,10 @@ textarea.form-control { resize: vertical; }
 			animation-delay: -6s;
 	transform: translate3d(6vw, 88vh, 39px);
 	background: #CD853F;
+  }
+  canvas {
+	border: 1px soild black;
+	position: fixed;
+	top: 0;
+	z-index: -1;
   }

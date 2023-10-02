@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="HTML5" />
-    <meta name="description" content="Measy fretes" />
-    <meta name="author" content="soldafria.net" />
+    <meta name="description" content="Convite de casamento de Marlon & Vasti" />
+    <meta name="author" content="Marlon Willis" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>Convite De Casamente</title>
     <!-- Favicon -->
@@ -43,41 +43,37 @@
 
 <body>
     <div id="main">
-        <!--=================================
-search and side menu content-disable -->
-        <div class="search-overlay"></div>
-        <div class="menu-overlay"></div>
-        <!--=================================
-service-quality-->
-        <section class="service-quality">
+        <section class="service-quality pt-9">
             <div class="container">
               <div class="container">
                   <div class="row">
                       <div class="col-lg-12">
                           <div class="addresss mb-3 mt-5">
-                              <div class="addresss-info">
-                                  <h3 class="center-typo">Vasti &</br> Marlon</h3>
+                              <div class="addresss-info fade-typos">
+                                  <h3 class="center-typo"><span>Vasti &</span></br><span>Marlon</span></h3>
                               </div>
                           </div>
                           <div class="addresss mb-1">
                               <div class="addresss-icon">
                             </div>
-                              <div class="addresss-info center-typo">
+                              <div class="addresss-info center-typo fade-typos">
                                   <h6 class="text-Black">Convidam para cerimõnia de seu casamento</h6>
-                                  <h2>Sexta-feira, 13 de Oututro de 2023, às 19h<h2>
+                                  <h2>Sexta-feira, 13 de Oututro de 2023, às 19h</h2>
+                                    <h5 class="text-Black">PRIMEIRA IGREJA BATISTA IPS </h5>
+                                    <h7>R. Maestro Lourenço Soares, 96 - Ips, Campos dos Goytacazes </h7>
                               </div>
                           </div>
                           <div class="header-social">                  
                      </div>
                     </div>
                       <div class="col-lg-5">
-                          <div class="contact-form-title mb-4">
+                          <div class="contact-form-title mt-1 fade-typos">
                              
                             <p class="typo-01"> "E ACIMA DE TUDO, TENHAM AMOR, POIS O AMOR </br> UNE PERFEITAMENTE TODAS AS COISAS." </br> COLOSSENSES 3:14</p>
 
                           </div>
                           <div id="formmessage" style="display:none; ">Success/Error Message Goes Here</div>
-                          <form id="contactform" autocomplete="off" class="gray-form row" method="post" name="google-sheet">
+                          <form id="contactform" autocomplete="off" class="gray-form row fade-typos" method="post" name="google-sheet">
                             <div class="col-md-12 center-typo">
                                 <div class="form-group ">
                                   <input type="radio" id="noCheck" class="Empresa" name="Presença" value="Confirmada" required>
@@ -104,109 +100,8 @@ service-quality-->
             </BR>
             </BR>
             </BR>
-            <svg id="pane" class="flowers-bg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 450 450" preserveAspectRatio="xMidYMid meet" onload="init(10,false)">
-                <script type="text/javascript">
-                <![CDATA[
-                Math.rnd=function(von, bis) {
-                    const min= Math.min(von, bis);
-                    return Math.random() * (Math.max(von, bis) - min) + min;
-                }
-                
-                function spline(x, y, minR, maxR) {
-                    var
-                          alpha = Math.rnd (0, 2 * Math.PI)
-                        , mtx= Math.rnd (minR, maxR)
-                        , mty= Math.rnd (minR, maxR / 1.4)
-                        , tx= mtx * Math.sin (alpha)
-                        , ty= mty * Math.cos (alpha)
-                        , sx= (mtx * Math.rnd (0.8, 0.9)) * Math.sin (alpha)
-                        , sy= mty * Math.cos (alpha)
-                        , target = {x: Math.round(tx + x), y: Math.round(ty + (y * 1.1))}
-                        , spline = {x: Math.round(sx + x), y: Math.round(sy + (y * Math.rnd (0.9, 0.9)))}
-                        , path = 'M' + x + ' ' + y + 'Q' + spline.x + ' ' + spline.y + ',' + target.x + ' ' + target.y
-                        , rotate = 'auto' + ((target.x > x) ? '-reverse' : '')
-                    ;
-                    return {path: path, rotate: rotate};
-                }
-                
-                function init(elements, visibility) {
-                    const
-                          BEGIN= 'begin'
-                        , PATH= 'path'
-                        , ROTATE= 'rotate'
-                        , DUR= 'dur'
-                        , D= 'd'
-                        , STYLE= 'style'
-                        , ID= 'id'
-                    ;
-                    var
-                          svg= document.getElementById ('pane')
-                        , c= svg.getElementById ('pfad')
-                        , d= svg.getElementById ('objekt')
-                    ;
-                
-                    for (var i= 1; i <= elements; i++) {
-                        var
-                              t= Math.rnd (5, 9)
-                            , s= spline (225, 225, 255, 250)
-                            , cln= c.cloneNode (true)
-                            , dln= d.cloneNode (true)
-                        ;
-                
-                        cln.setAttribute (ID, 'pfad' + i);
-                        cln.setAttribute (STYLE, 'visibility:' + (visibility ? 'visible' : 'hidden'));
-                        cln.setAttribute (D, s.path);
-                        svg.appendChild (cln);
-                
-                        dln.setAttribute (ID, 'objekt' + i);
-                        dln.childNodes[1].setAttribute (ID, 'a1_' + i); // motion
-                        dln.childNodes[1].setAttribute (PATH, s.path); // motion
-                        dln.childNodes[1].setAttribute (ROTATE, s.rotate); // motion
-                        dln.childNodes[1].setAttribute (DUR, t); // motion
-                        dln.childNodes[3].setAttribute (DUR, t); // fill
-                        dln.childNodes[5].setAttribute (DUR, t); // opacity
-                        dln.childNodes[7].setAttribute (DUR, t); // scale
-                        svg.appendChild (dln);
-                    }
-                    svg.removeChild (c);
-                    svg.removeChild (d);
-                    document.getElementById ('a1_1').setAttribute (BEGIN, '0s'); // Begin when all is set and done
-                }
-                
-                ]]>
-                </script>
-                <defs>
-                <g id="flower">
-                    <defs>
-                        <style>
-                            circle {fill:lightcoral;stroke:lightgreen;sroke-width:0.1}
-                            ellipse {fill:rose;stroke:pink;sroke-width:0.1}
-                        </style>
-                        <g id="blatt">
-                            <ellipse cx="0" cy="0" rx="7" ry="10" transform="translate (0,10)"/>
-                        </g>
-                    </defs>
-                    <use xlink:href="#blatt"/>
-                    <use xlink:href="#blatt" transform="rotate(72)"/>
-                    <use xlink:href="#blatt" transform="rotate(144)"/>
-                    <use xlink:href="#blatt" transform="rotate(216)"/>
-                    <use xlink:href="#blatt" transform="rotate(288)"/>
-                    <circle cx="0" cy="0" r="3"/>
-                </g>
-                </defs>
-                <style>
-                    path {stroke:black;stroke-width:0.2;stroke-linecap:round;fill:none}
-                    use {will-change:opacity}
-                </style>
-                <path id="pfad" d=""/>
-                <use id="objekt" width="40" height="40" xlink:href="#flower">
-                    <animateMotion begin="a1_1.begin" repeatCount="indefinite" fill="remove"/>
-                    <animate attributeName="fill" attributeType="CSS" values="pink;lightcoral;yellow" repeatCount="indefinite" fill="remove"/>
-                    <animate attributeName="opacity" values="0.1;1;0.6;" repeatCount="indefinite" fill="remove"/>
-                    <animateTransform attributeName="transform" type="scale" from="1" to="0" repeatCount="indefinite" fill="remove"/>
-                </use>
-                </svg>
           </section>
+          <canvas id="canvas"></canvas>
           <div class="bg-particle" id="particle-container">
             <div class="particle"></div>
             <div class="particle"></div>
@@ -297,7 +192,7 @@ footer -->
 
 
     <!-- magnific -->
-    <script type="text/javascript" src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/script-dust.js"></script>
 
     <!-- revolution -->
     <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
