@@ -76,11 +76,12 @@
                           <div id="formmessage" style="display:none; ">Success/Error Message Goes Here</div>
                           <form id="contactform" autocomplete="off" class="gray-form row fade-typos" method="post" name="google-sheet">
                             <div class="col-md-12 center-typo">
+                                <h7>Confirme sua Presença:</h7>
                                 <div class="form-group ">
                                   <input type="radio" id="noCheck" class="Empresa" name="Presença" value="Confirmada" required>
-                                  <label for="Tipo">Confirmar</label>
+                                  <label for="Tipo">Sim</label>
                                   <input type="radio" id="yesCheck"  class="Entregador" name="Presença" value="Não vai" required>
-                                  <label for="Tipo">Não vou ir</label><br>
+                                  <label class="nop" for="Tipo">Não</label><br>
                                 </div>
                              </div>
                               <div class="col-md-6 center-typo">
@@ -142,7 +143,7 @@
       form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => alert('Obridado por se Cadastrar!'))
+      .then(response => alert('Agradecemos desde já sua Presença!'))
       .catch(error => console.error('Error!', error.message))
           if(alert('Obridado por se Cadastrar!')){}
             else    window.location.reload();
